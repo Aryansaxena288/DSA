@@ -15,6 +15,7 @@ class Solution {
             return memo[unpicked][undelivered];
         }
         
+        
         long ans = 0;
         ans += unpicked * totalWays(unpicked - 1, undelivered);
         ans %= MOD;
